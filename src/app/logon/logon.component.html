@@ -18,7 +18,7 @@
                 [(ngModel)]="user.password">
             <span md-prefix><md-icon>lock</md-icon></span>
       </md-input>
-      <button type="submit" md-raised-button>Login</button>
+      <button type="submit" md-raised-button (click)="login()">Login</button>
   </form>
   
   <div fxLayout="row" fxLayoutAlign="center"><h4>**** or sign-up using ****</h4></div>
