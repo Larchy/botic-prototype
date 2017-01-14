@@ -1,3 +1,22 @@
-<p>
-  logon works!
-</p>
+<div fxfill>
+	<form fxLayout="column" fxLayoutAlign="space-between none">
+      <md-input #email
+                required
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                fontIcon=""
+                [(ngModel)]="user.email">
+                <md-icon>person</md-icon>
+      </md-input>
+      <md-input #password
+                required
+                type="password"
+                name="password"
+                placeholder="Password"
+                fontIcon="lock"
+                [(ngModel)]="user.password">
+      </md-input>
+      <button type="submit" md-raised-button>Login</button>
+  </form>
+</div>
