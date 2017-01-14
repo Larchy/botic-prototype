@@ -1,22 +1,31 @@
-<div fxfill>
+<div fxFlex="90" fxFlexOffset="5" fxLayout="column" fxLayoutAlign="space-between stretch">
+	<md-icon >videocam</md-icon>
+	
 	<form fxLayout="column" fxLayoutAlign="space-between none">
-      <md-input #email
+      <md-input #username
                 required
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                fontIcon=""
-                [(ngModel)]="user.email">
-                <md-icon>person</md-icon>
+                type="text"
+                name="username"
+                placeholder="Username"
+                [(ngModel)]="user.name">
+            <span md-prefix><md-icon>person</md-icon></span>
       </md-input>
       <md-input #password
                 required
                 type="password"
                 name="password"
                 placeholder="Password"
-                fontIcon="lock"
                 [(ngModel)]="user.password">
+            <span md-prefix><md-icon>lock</md-icon></span>
       </md-input>
       <button type="submit" md-raised-button>Login</button>
   </form>
+  
+  <div fxLayout="row" fxLayoutAlign="center"><h4>**** or sign-up using ****</h4></div>
+  <div fxLayout="row" fxLayoutAlign="center"><h1>Email Address</h1></div>
+  
+  <div fxLayout="row" fxLayoutAlign="space-between stretch">
+      <button fxFlex="45" md-raised-button>Facebook</button>
+      <button fxFlex="45" md-raised-button>Google</button>
+  </div>
 </div>

@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogonComponent implements OnInit {
   user: {
-    email: string
+    name: string
     password: string
   } = {
-    email: '',
+    name: '',
     password: '',
   }
 
