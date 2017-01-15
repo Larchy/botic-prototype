@@ -18,14 +18,14 @@
                 [(ngModel)]="user.password">
             <span md-prefix><md-icon>lock</md-icon></span>
       </md-input>
-      <button type="submit" md-raised-button (click)="login()">Login</button>
+      <button class="submit" type="submit" md-raised-button (click)="login()" color="primary">Login</button>
   </form>
   
   <div fxLayout="row" fxLayoutAlign="center"><h4>**** or sign-up using ****</h4></div>
   <div fxLayout="row" fxLayoutAlign="center"><h1>Email Address</h1></div>
   
-  <div fxLayout="row" fxLayoutAlign="space-between stretch">
-      <button fxFlex="50" md-icon-button><img fxFlex="95" src="./img/fb-signup.png" /></button>
-      <button fxFlex="50" md-icon-button><img fxFlex="95" src="./img/gmail-signup.png" /></button>
+  <div fxLayout="row" fxLayoutAlign="space-between end">
+      <div fxFlex="45"><img fxFlex="100" src="./img/fb-signup.png" /></div>
+      <div fxFlex="45"><img fxFlex="100" src="./img/gmail-signup.png" /></div>
   </div>
 </div>

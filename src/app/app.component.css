@@ -1,7 +1,3 @@
-body {
-	background-color: #000000;
-}
-
-: host { 
-	display:block;
+:host { 
+	margin: 0;
 }
