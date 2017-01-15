@@ -3,4 +3,10 @@
 		<div fxFlex="33"><app-menu></app-menu></div>
 		<div fxFlex="40"><button md-raised-button>Publish</button></div>
 	</div>
+	<div fxflex></div>
+	<div>
+		<md-input-container>
+		    <md-input #eventName type="text" name="eventname" placeholder="Event Name Here" [(ngModel)]="event.name"></md-input>
+		</md-input-container>
+	</div>
 </div>
