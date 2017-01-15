@@ -18,3 +18,8 @@ $botic-app-theme: md-light-theme($botic-app-primary, $botic-app-accent, $botic-a
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($botic-app-theme);
+
+
+form .md-input-placeholder {
+  color : white !important;
+}
