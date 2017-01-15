@@ -1,29 +1,33 @@
 <div fxFlex="90" fxFlexOffset="5" fxLayout="column" fxLayoutAlign="space-between stretch">
-	<img src="./img/botic-app-logo.png" />
-	
+	<div class="logo"><img src="./img/botic-app-logo.png" /></div>
+
 	<form fxLayout="column" fxLayoutAlign="space-between none">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <md-icon fxFlex="none">person</md-icon>
       <md-input #username
                 required
                 type="text"
                 name="username"
                 placeholder="Username"
-                [(ngModel)]="user.name">
-            <span md-prefix><md-icon>person</md-icon></span>
-      </md-input>
+                fxFlex
+                [(ngModel)]="user.name"></md-input>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <md-icon fxFlex="none" fxLayoutPadding>lock</md-icon>
       <md-input #password
                 required
                 type="password"
                 name="password"
                 placeholder="Password"
-                [(ngModel)]="user.password">
-            <span md-prefix><md-icon>lock</md-icon></span>
-      </md-input>
-      <button class="submit" type="submit" md-raised-button (click)="login()" color="primary">Login</button>
+                fxFlex
+                [(ngModel)]="user.password"></md-input>
+    </div>
+    <button class="submit" type="submit" md-raised-button (click)="login()" color="primary">Login</button>
   </form>
-  
+
   <div fxLayout="row" fxLayoutAlign="center"><h4>**** or sign-up using ****</h4></div>
   <div fxLayout="row" fxLayoutAlign="center"><h1>Email Address</h1></div>
-  
+
   <div fxLayout="row" fxLayoutAlign="space-between end">
       <div fxFlex="45"><img fxFlex="100" src="./img/fb-signup.png" /></div>
       <div fxFlex="45"><img fxFlex="100" src="./img/gmail-signup.png" /></div>
