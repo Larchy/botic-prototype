@@ -14,5 +14,25 @@
     background-size: cover;
     
     color: white;
+    padding-top: 5%;
 }
 
+:host button img {
+	height : 100%;
+	width  : 100%;
+}
+
+:host button {
+	background: rgba(0,0,0,0.1)
+}
+
+:host img.gear {
+   transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+
+	position: absolute;   
+    width: 100%;
+    bottom: -5%;
+    right: -65%;
+}
