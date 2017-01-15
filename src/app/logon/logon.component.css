@@ -41,3 +41,14 @@
 :host button.submit {
 	border-radius: 0 0 9px 9px;
 }
+
+:host hr {
+  border-width: 1px;
+  margin: 8px 20px;
+  height : 1px;
+}
+
+:host .social-media-container > div {
+  text-align: center;
+  margin: 0 5px;
+}

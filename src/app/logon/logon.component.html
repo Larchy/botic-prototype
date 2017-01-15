@@ -25,10 +25,12 @@
     <button class="submit" type="submit" md-raised-button (click)="login()" color="primary">Login</button>
   </form>
 
-  <div fxLayout="row" fxLayoutAlign="center"><h4>**** or sign-up using ****</h4></div>
-  <div fxLayout="row" fxLayoutAlign="center"><h1>Email Address</h1></div>
+  <div fxLayout="column" fxLayoutAlign="center stretch">
+    <div fxLayout="row" style="margin-top:20px;"><hr fxFlex /><span>or sign-up using</span><hr fxFlex/></div>
+  </div>
+  <h3 style="text-align: center">Email Address</h3>
 
-  <div fxLayout="row" fxLayoutAlign="space-between end">
+  <div class="social-media-container" fxLayout="row" fxLayoutAlign="center space-between">
       <div fxFlex="45"><img fxFlex="100" src="./img/fb-signup.png" /></div>
       <div fxFlex="45"><img fxFlex="100" src="./img/gmail-signup.png" /></div>
   </div>
