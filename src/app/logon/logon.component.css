@@ -20,7 +20,7 @@
   text-align: center;
 }
 :host .logo > img {
-  width : auto;
+  width : 100%;
   max-width: 410px;
 }
 
