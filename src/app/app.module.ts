@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { SetupComponent } from './setup/setup.component';
 import { LiveComponent } from './live/live.component';
 import { EventSetupComponent } from './event-setup/event-setup.component';
+import { AppMenuComponent } from './app-menu/app-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EventSetupComponent } from './event-setup/event-setup.component';
     HomeComponent,
     SetupComponent,
     LiveComponent,
-    EventSetupComponent
+    EventSetupComponent,
+    AppMenuComponent
   ],
   imports: [
     BrowserModule,

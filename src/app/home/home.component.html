@@ -1,11 +1,6 @@
 <div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
 	<div fxLayout="row">
-		<div fxFlex="33"><button md-mini-fab [mdMenuTriggerFor]="menu"><img src="./img/menu-icon.png" /></button></div>
-		<md-menu #menu="mdMenu">
-		    <button md-menu-item routerLink="/setup">Setup</button>
-		    <button md-menu-item routerLink="/live">Live</button>
-		    <button md-menu-item routerLink="/event-setup">Event Setup</button>
-		</md-menu>
+		<div fxFlex="33"><app-menu></app-menu></div>
 		<div fxFlex="33"><button md-fab><img src="./img/mark-turner-profile-pic.png" /></button></div>
 		<div fxFlex="33" fxLayout="column" fxLayoutAlign="center center">
 			<div class="md-display-1">1.2M</div>
