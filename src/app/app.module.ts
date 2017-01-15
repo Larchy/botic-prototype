@@ -11,13 +11,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LogonComponent } from './logon/logon.component';
 import { HomeComponent } from './home/home.component';
+import { SetupComponent } from './setup/setup.component';
+import { LiveComponent } from './live/live.component';
+import { EventSetupComponent } from './event-setup/event-setup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
     LogonComponent,
-    HomeComponent
+    HomeComponent,
+    SetupComponent,
+    LiveComponent,
+    EventSetupComponent
   ],
   imports: [
     BrowserModule,
