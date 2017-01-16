@@ -11,7 +11,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'setup', component: SetupComponent },
   { path: 'live', component: LiveComponent },
-  { path: 'event-setup', component: EventSetupComponent },
+  { path: 'eventSetup', component: EventSetupComponent },
   { path: '',   redirectTo: '/logon', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];

@@ -23,3 +23,7 @@
 :host > div > div {	
     padding: 5%;
 }
+
+:host md-input[name~="eventname"] {
+	width : 100%;
+}

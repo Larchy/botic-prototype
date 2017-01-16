@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event-setup.component.css']
 })
 export class EventSetupComponent implements OnInit {
+	event: {
+		name: string
+		date: string
+		time: string
+		cost: number
+		rating: string
+	} = {
+		name: '',
+		date: '',
+		time: '',
+		cost: null,
+		rating: ''
+	}
 
   constructor() { }
 
