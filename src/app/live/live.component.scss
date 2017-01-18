@@ -14,12 +14,12 @@
     background-size: cover;
     
     color: white;
-}
-
-:host .shaded {
-	background: rgba(0,0,0,0.3);
-}
-
-:host > div > div {	
-    padding: 5%;
+	
+	.shaded {
+		background: rgba(0,0,0,0.3);
+	}
+	
+	> div > div {	
+    	padding: 5%;
+	}
 }

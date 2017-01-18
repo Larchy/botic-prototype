@@ -1,22 +1,30 @@
 <div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
 	<div fxLayout="row" fxLayoutAlign="space-between center" class="shaded" >
 		<div fxFlex="33"><app-menu></app-menu></div>
-		<div fxFlex="40"><button md-raised-button>Publish</button></div>
+		<div fxFlex="40"><button md-raised-button class="md-accent">Publish</button></div>
 	</div>
 	<div fxFlex></div>
-	<div fxFlex="nogrow" fxLayout="column" fxLayoutAlign="space-between center" class="shaded">
-		<md-input #eventName type="text" name="eventname" placeholder="Event Name Here" [(ngModel)]="event.name"></md-input>
+	<form fxFlex="nogrow" fxLayout="column" fxLayoutAlign="space-between center" class="shaded">
+		<md-input type="text" name="eventname" placeholder="Event Name" [(ngModel)]="event.name">
+			<span md-prefix><md-icon class="md-accent">check_circle</md-icon></span>
+		</md-input>
 		<div fxLayout="row" fxLayoutAlign="space-between stretch">
-			<md-input #eventDate type="text" name="eventdate" placeholder="Jan 22, 2016" [(ngModel)]="event.date"></md-input>
+			<md-input type="text" name="eventdate" placeholder="Event Date" [(ngModel)]="event.date">
+				<span md-prefix><md-icon class="md-accent">check_circle</md-icon></span>
+			</md-input>
 			<div fxFlex="5"></div>
-			<md-input #eventTime type="text" name="eventtime" placeholder="10:30 (CST)" [(ngModel)]="event.time"></md-input>
+			<md-input type="text" name="eventtime" placeholder="Event Time (CST)" [(ngModel)]="event.time">
+				<span md-prefix><md-icon class="md-accent">check_circle</md-icon></span>
+			</md-input>
 		</div>
-		<md-input #eventCost type="text" name="eventcost" placeholder="Cost" [(ngModel)]="event.cost"></md-input>
+		<md-input #eventCost type="text" name="eventcost" placeholder="Cost" [(ngModel)]="event.cost">
+			<span md-prefix><md-icon class="md-accent">check_circle</md-icon> $</span>
+		</md-input>
 		<md-button-toggle-group #group="mdButtonToggleGroup" fxLayout="row" fxLayoutAlign="space-between stretch">
 		    <md-button-toggle value="G" >G</md-button-toggle>
 		    <md-button-toggle value="PG" >PG</md-button-toggle>
 		    <md-button-toggle value="PG-13" >PG-13</md-button-toggle>
 		    <md-button-toggle value="R" >R</md-button-toggle>
 		</md-button-toggle-group>
-	</div>
+	</form>
 </div>
