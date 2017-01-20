@@ -19,9 +19,9 @@ export class LogonComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   login () {
-	  this.router.navigateByUrl(`/home`)
+	  this.router.navigateByUrl(`/profile`)
   }
 
 }

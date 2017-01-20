@@ -1,14 +1,14 @@
 import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 import { LogonComponent }        from './logon/logon.component';
-import { HomeComponent }         from './home/home.component';
+import { ProfileComponent }      from './profile/profile.component';
 import { SetupComponent }        from './setup/setup.component';
 import { LiveComponent }         from './live/live.component';
 import { EventSetupComponent }   from './event-setup/event-setup.component';
 import { NotFoundComponent }     from './not-found/not-found.component';
 const appRoutes: Routes = [
   { path: 'logon', component: LogonComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'profile', component: ProfileComponent },
   { path: 'setup', component: SetupComponent },
   { path: 'live', component: LiveComponent },
   { path: 'eventSetup', component: EventSetupComponent },
