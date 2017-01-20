@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./live.component.scss']
 })
 export class LiveComponent implements OnInit {
+	private feeds: Array<string>;
 
   constructor() { }
 
   ngOnInit() {
+	  this.feeds = ["@RichJay", "@MelvinJamie", "@AngelaJones", "@DougSmith"];
+  }
+  
+  invite() {
+	  debugger;
+	  // TODO: do something;
   }
 
 }

@@ -1,10 +1,38 @@
 <div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
-	<div fxLayout="row" fxLayoutAlign="space-between center" class="shaded" >
-		<div fxFlex="33"><app-menu></app-menu></div>
-		<div fxFlex="40"><button md-raised-button>Publish</button></div>
+	<div fxFlex="10" fxLayout="row" fxLayoutAlign="space-between center">
+		<div fxLayout="row" fxLayoutAlign="center center" (click)="invite()">
+			<img src="./img/invite-icon.png" />
+			<div class='xsmall'>INVITE</div>
+		</div>
+		<div fxFlex="50" class='shaded roundCorners' fxLayoutAlign="center center"><div>- 00:30:59</div></div>
+		<div fxLayout="row" fxLayoutAlign="center center">
+			<div class='dot'></div>
+			<div class='small'>LIVE</div>
+		</div>
 	</div>
 	<div fxFlex></div>
-	<div fxFlex="nogrow">
-		
+	<div fxFlex="nogrow" fxLayout="column">
+		<div fxLayout="row" fxLayoutAlign="space-between">
+			<md-icon routerLink="/profile">exit_to_app</md-icon>
+			<div fxFlex="33" fxLayout="row" fxLayoutAlign="space-between stretch">
+				<div>
+					<img class="thumbs" src="./img/thumbs-up-selected.png" />
+					<span class='small'>8k</span>
+				</div>
+				<div>
+					<img class="thumbs" src="./img/thumbs-down-selected.png" />
+					<span class='small'>0</span>
+				</div>
+			</div>
+		</div>
+		<md-divider></md-divider>
+		<div fxLayout="row">
+			<div *ngFor="let feed of feeds" fxLayout="column" fxLayoutAlign="center center" fxFlex="33">
+				<button md-fab>
+					<img src="./img/camera-not-selected.png" />
+				</button>
+				<div class='small'>{{feed}}</div>
+			</div>
+		</div>
 	</div>
 </div>
