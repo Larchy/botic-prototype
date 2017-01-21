@@ -1,9 +1,15 @@
 <div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
 	<div fxLayout="row" fxLayoutAlign="space-between center" class="shaded" >
-		<div fxFlex="33"><app-menu></app-menu></div>
-		<div fxFlex="40"><button md-raised-button class="md-accent">Publish</button></div>
+		<app-menu></app-menu>
+		<button md-raised-button class="md-accent">Publish</button>
 	</div>
-	<div fxFlex></div>
+	<div fxFlex fxLayoutAlign="end end">
+		<div fxFill></div>
+		<div fxLayout="column" fxLayoutAlign="center center" class="previewContainer">
+			<button md-mini-fab><img src="./img/camera-not-selected.png" /></button>
+			<div>Preview</div>
+		</div>
+	</div>
 	<form fxFlex="nogrow" fxLayout="column" fxLayoutAlign="space-between center" class="shaded">
 		<md-input type="text" name="eventname" placeholder="Event Name" [(ngModel)]="event.name">
 			<span md-prefix><md-icon class="md-accent">check_circle</md-icon></span>
