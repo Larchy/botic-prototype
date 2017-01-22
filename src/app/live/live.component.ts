@@ -19,7 +19,7 @@ export class LiveComponent implements OnInit {
 	  this.feeds = [
           {name: "@RichJay", id: 'tJJdBTQqwQM'},
           {name: "@MelvinJamie", id: 'dvlEaUlTEsg'},
-          {name: "@AngelaJones", id: 'q7Dc6AR11s'},
+          {name: "@AngelaJones", id: 'Mx1DxPwEz1w'},
           {name: "@DougSmith", id: 'WtH3dBbEDIE'}
 	  ];
 	
