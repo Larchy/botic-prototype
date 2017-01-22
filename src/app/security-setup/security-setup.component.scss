@@ -1,0 +1,43 @@
+:host {
+	position: absolute;
+	
+	height : 100%;
+	width  : 100%;
+	
+	background-image: url(./img/blur-image-bg-02.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color: white;
+    
+    app-menu {
+    	left: 5%;
+    	position: absolute;
+	}
+	
+	.previewContainer {
+		position: absolute;
+	
+		button {
+			background: rgba(0,0,0,0.1);
+	
+			img {
+				height : 100%;
+				width  : 100%;
+			}
+		}
+	}
+	
+	.warn {
+		background: red;
+	}
+	
+	> div > div {	
+    	padding: 5%;
+	}
+}
