@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-live',
@@ -6,17 +7,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./live.component.scss']
 })
 export class LiveComponent implements OnInit {
-	private feeds: Array<string>;
+	private feeds: Array<any>;
+	private name:string;
+	private video: any = {id: 'tJJdBTQqwQM'};
+	private baseUrl:string = 'https://www.youtube.com/embed/';
+	private url:any;
 
-  constructor() { }
+  constructor(private sanitizer:DomSanitizer) { }
 
   ngOnInit() {
-	  this.feeds = ["@RichJay", "@MelvinJamie", "@AngelaJones", "@DougSmith"];
+	  this.feeds = [
+          {name: "@RichJay", id: 'tJJdBTQqwQM'},
+          {name: "@MelvinJamie", id: 'dvlEaUlTEsg'},
+          {name: "@AngelaJones", id: 'q7Dc6AR11s'},
+          {name: "@DougSmith", id: 'WtH3dBbEDIE'}
+	  ];
+	
+	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id);    
   }
   
   invite() {
 	  debugger;
 	  // TODO: do something;
+  }
+  
+  selectVideo(videoId) {
+	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + videoId); 
   }
 
 }

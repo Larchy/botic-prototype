@@ -11,7 +11,7 @@
 		</div>
 	</div>
 	<div fxFlex="5" fxLayout="row" fxLayoutAlign="center center"> <div class="rating">PG-13</div></div>
-	<div fxFlex></div>
+	<iframe fxFlex [src]="url" frameborder="0" allowfullscreen></iframe>
 	<div fxFlex="nogrow" fxLayout="column">
 		<div fxLayout="row" fxLayoutAlign="space-between">
 			<md-icon routerLink="/profile">exit_to_app</md-icon>
@@ -28,11 +28,11 @@
 		</div>
 		<md-divider></md-divider>
 		<div fxLayout="row">
-			<div *ngFor="let feed of feeds" fxLayout="column" fxLayoutAlign="center center" fxFlex="33">
+			<div *ngFor="let feed of feeds" fxLayout="column" fxLayoutAlign="center center" fxFlex="33" (click)="selectVideo(feed.id)">
 				<button md-fab>
 					<img src="./img/camera-not-selected.png" />
 				</button>
-				<div class='small'>{{feed}}</div>
+				<div class='small' >{{feed.name}}</div>
 			</div>
 		</div>
 	</div>

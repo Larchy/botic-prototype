@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-event-setup',
@@ -19,10 +20,16 @@ export class EventSetupComponent implements OnInit {
 		cost: null,
 		rating: ''
 	}
+	
+	private name:string;
+	private video: any = {id: 'tJJdBTQqwQM'};
+	private baseUrl:string = 'https://www.youtube.com/embed/';
+	private url:any;
 
-  constructor() { }
+	constructor(private sanitizer:DomSanitizer) { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id);  
+	}
 
 }
