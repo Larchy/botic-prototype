@@ -11,10 +11,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LogonComponent } from './logon/logon.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SetupComponent } from './setup/setup.component';
 import { LiveComponent } from './live/live.component';
 import { EventSetupComponent } from './event-setup/event-setup.component';
 import { AppMenuComponent } from './app-menu/app-menu.component';
+import { SecuritySetupComponent } from './security-setup/security-setup.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { BankInfoComponent } from './bank-info/bank-info.component';
+import { SyncComponent } from './sync/sync.component';
+import { LandingComponent } from './landing/landing.component';
+import { ProfileViewComponent } from './profile-view/profile-view.component';
+import { EventViewComponent } from './event-view/event-view.component';
+import { ChannelTopicsComponent } from './channel-topics/channel-topics.component';
+import { HostViewComponent } from './host-view/host-view.component';
+import { EventSummaryComponent } from './event-summary/event-summary.component';
+import { DonationComponent } from './donation/donation.component';
+import { ProfileSetupComponent } from './profile-setup/profile-setup.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +33,21 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
     NotFoundComponent,
     LogonComponent,
     ProfileComponent,
-    SetupComponent,
     LiveComponent,
     EventSetupComponent,
-    AppMenuComponent
+    AppMenuComponent,
+    SecuritySetupComponent,
+    SignUpComponent,
+    BankInfoComponent,
+    SyncComponent,
+    LandingComponent,
+    ProfileViewComponent,
+    EventViewComponent,
+    ChannelTopicsComponent,
+    HostViewComponent,
+    EventSummaryComponent,
+    DonationComponent,
+    ProfileSetupComponent
   ],
   imports: [
     BrowserModule,
