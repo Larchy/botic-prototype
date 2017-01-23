@@ -20,7 +20,7 @@ export class EventSetupComponent implements OnInit {
 		cost: null,
 		rating: ''
 	}
-	
+
 	private name:string;
 	private video: any = {id: 'tJJdBTQqwQM'};
 	private baseUrl:string = 'https://www.youtube.com/embed/';
@@ -29,7 +29,7 @@ export class EventSetupComponent implements OnInit {
 	constructor(private sanitizer:DomSanitizer) { }
 
 	ngOnInit() {
-		this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id);  
+		this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id + "?autoplay=1"); //Autoplay doesn't work on mobile (or in browser while set to mobile!)
 	}
 
 }

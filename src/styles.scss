@@ -19,6 +19,7 @@ $botic-app-theme: md-light-theme($botic-app-primary, $botic-app-accent, $botic-a
 // that you are using.
 @include angular-material-theme($botic-app-theme);
 
+html {overflow: hidden}
 
 form .md-input-placeholder {
   color : white;

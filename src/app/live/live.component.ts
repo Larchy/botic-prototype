@@ -22,17 +22,17 @@ export class LiveComponent implements OnInit {
           {name: "@AngelaJones", id: 'Mx1DxPwEz1w'},
           {name: "@DougSmith", id: 'WtH3dBbEDIE'}
 	  ];
-	
-	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id);    
+
+	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id + "?autoplay=1");
   }
-  
+
   invite() {
 	  debugger;
 	  // TODO: do something;
   }
-  
+
   selectVideo(videoId) {
-	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + videoId); 
+	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + videoId + "?autoplay=1");
   }
 
 }
