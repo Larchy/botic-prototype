@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./security-setup.component.scss']
 })
 export class SecuritySetupComponent implements OnInit {
+	private PIN:Array<string>;
 
   constructor() { }
 
   ngOnInit() {
+	  if(!this.PIN || this.PIN.length != 6) {
+		  this.PIN = ["a","b","c","d","e","f"];
+	  }
   }
 
 }
