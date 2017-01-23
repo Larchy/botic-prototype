@@ -8,6 +8,7 @@ import { EventSetupComponent }    from './event-setup/event-setup.component';
 import { NotFoundComponent }      from './not-found/not-found.component';
 import {BankInfoComponent}        from "./bank-info/bank-info.component";
 import {SyncComponent}            from "./sync/sync.component";
+
 const appRoutes: Routes = [
   { path: 'logon', component: LogonComponent },
   { path: 'security', component: SecuritySetupComponent },

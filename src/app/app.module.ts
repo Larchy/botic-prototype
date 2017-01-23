@@ -18,7 +18,6 @@ import { SecuritySetupComponent } from './security-setup/security-setup.componen
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BankInfoComponent } from './bank-info/bank-info.component';
 import { SyncComponent } from './sync/sync.component';
-import { LandingComponent } from './landing/landing.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { EventViewComponent } from './event-view/event-view.component';
 import { ChannelTopicsComponent } from './channel-topics/channel-topics.component';
@@ -40,7 +39,6 @@ import { ProfileSetupComponent } from './profile-setup/profile-setup.component';
     SignUpComponent,
     BankInfoComponent,
     SyncComponent,
-    LandingComponent,
     ProfileViewComponent,
     EventViewComponent,
     ChannelTopicsComponent,
