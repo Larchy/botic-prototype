@@ -1,5 +1,5 @@
 <div fxFlex="90" fxFlexOffset="5" fxLayout="column" fxLayoutAlign="space-between stretch">
-  <div class="logo" fxFlex="none"><img src="./img/botic-app-logo.png"/></div>
+  <div class="logo" fxFlex="none"><img src="./assets/img/botic-app-logo.png"/></div>
   <div fxFlex style="position:relative;">
     <form *ngIf="!useEmail" fxLayout="column" fxLayoutAlign="space-between none" (ngSubmit)="login()" [@myAnimation]="hide">
       <div fxLayout="row" fxLayoutAlign="center center">
@@ -72,8 +72,8 @@
   <button *ngIf="useEmail" style="margin:10px;" md-raised-button color="warn" (click)="useEmail = false">Back to Sign-in</button>
 
   <div *ngIf="!useEmail" class="social-media-container" fxLayout="row" fxLayoutAlign="center space-between">
-    <div fxFlex="45"><img fxFlex="100" src="./img/fb-signup.png" (click)="login()"/></div>
-    <div fxFlex="45"><img fxFlex="100" src="./img/gmail-signup.png" (click)="login()"/></div>
+    <div fxFlex="45"><img fxFlex="100" src="./assets/img/fb-signup.png" (click)="login()"/></div>
+    <div fxFlex="45"><img fxFlex="100" src="./assets/img/gmail-signup.png" (click)="login()"/></div>
   </div>
   <div fxFlex="10"></div>
 </div>

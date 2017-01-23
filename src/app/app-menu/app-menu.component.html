@@ -1,4 +1,4 @@
-<button md-mini-fab [mdMenuTriggerFor]="menu"><img src="./img/menu-icon.png" /></button>
+<button md-mini-fab [mdMenuTriggerFor]="menu"><img src="./assets/img/menu-icon.png" /></button>
 <md-menu #menu="mdMenu">
     <button md-menu-item routerLink="/profile" routerLinkActive="active" *ngIf="router.url != '/profile'">Profile</button>
     <button md-menu-item routerLink="/security" routerLinkActive="active" *ngIf="router.url != '/security'">Security</button>

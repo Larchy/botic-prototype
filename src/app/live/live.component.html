@@ -1,7 +1,7 @@
 <div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
 	<div fxFlex="10" fxLayout="row" fxLayoutAlign="space-between center">
 		<div fxLayout="row" fxLayoutAlign="center center" (click)="invite()">
-			<img src="./img/invite-icon.png" />
+			<img src="./assets/img/invite-icon.png" />
 			<div class='xsmall'>INVITE</div>
 		</div>
 		<div fxFlex="50" class='shaded roundCorners' fxLayoutAlign="center center"><div>- 00:30:59</div></div>
@@ -17,11 +17,11 @@
 			<md-icon routerLink="/profile">exit_to_app</md-icon>
 			<div fxFlex="33" fxLayout="row" fxLayoutAlign="space-between stretch">
 				<div>
-					<img class="thumbs" src="./img/thumbs-up-selected.png" />
+					<img class="thumbs" src="./assets/img/thumbs-up-selected.png" />
 					<span class='small'>8k</span>
 				</div>
 				<div>
-					<img class="thumbs" src="./img/thumbs-down-selected.png" />
+					<img class="thumbs" src="./assets/img/thumbs-down-selected.png" />
 					<span class='small'>0</span>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 		<div fxLayout="row">
 			<div *ngFor="let feed of feeds" fxLayout="column" fxLayoutAlign="center center" fxFlex="33" (click)="selectVideo(feed.id)">
 				<button md-fab>
-					<img src="./img/camera-not-selected.png" />
+					<img src="./assets/img/camera-not-selected.png" />
 				</button>
 				<div class='small' >{{feed.name}}</div>
 			</div>
