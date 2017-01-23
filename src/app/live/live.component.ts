@@ -23,7 +23,7 @@ export class LiveComponent implements OnInit {
           {name: "@DougSmith", id: 'WtH3dBbEDIE'}
 	  ];
 
-	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id + "?autoplay=1");
+	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id + "?autoplay=1" + "rel=0&showinfo=0&autoplay=1");
   }
 
   invite() {
@@ -32,7 +32,7 @@ export class LiveComponent implements OnInit {
   }
 
   selectVideo(videoId) {
-	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + videoId + "?autoplay=1");
+	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + videoId + "?autoplay=1" + "rel=0&showinfo=0&autoplay=1");
   }
 
 }

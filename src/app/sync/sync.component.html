@@ -1,3 +1,29 @@
-<p>
-  sync works!
-</p>
+<div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
+	<div fxLayout="row" fxLayoutAlign="center center" class="header">
+		<app-menu></app-menu>
+		<h2>Sync Video Camera</h2>
+	</div>
+	<div fxFlex='35' fxLayout="row" fxLayoutAlign="space-between center" class="settings">
+		<div fxFlex="50" fxLayout="column" fxLayoutAlign="space-between center">
+			<button md-fab><img src="./assets/img/camera-selected.png" /></button>
+			<md-slide-toggle></md-slide-toggle>
+		</div>
+		<div fxFlex="50" fxLayout="column" fxLayoutAlign="space-between center">
+			<button md-fab><img src="./assets/img/sounds-not-selected.png" /></button>
+			<md-slide-toggle></md-slide-toggle>
+		</div>
+	</div>
+	<div fxFlex='35' fxLayout="row" fxLayoutAlign="space-between center" class="settings">
+		<div fxFlex="50" fxLayout="column" fxLayoutAlign="space-between center">
+			<button md-fab><img src="./assets/img/blue-tooth-selected.png" /></button>
+			<md-slide-toggle></md-slide-toggle>
+		</div>
+		<div fxFlex="50" fxLayout="column" fxLayoutAlign="space-between center">
+			<button md-fab><img src="./assets/img/camera-battery-life.png" /></button>
+			<md-slide-toggle></md-slide-toggle>
+		</div>
+	</div>
+	<div fxFlex fxLayout="row" fxLayoutAlign="end end" class="addCamera">
+		<button md-raised-button>Add Camera</button> 
+	</div>
+</div>

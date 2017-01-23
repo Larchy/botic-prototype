@@ -33,7 +33,8 @@
 		}
 	}
 
-	.warn {
+	.header {
+		min-height: 50px;
 		background: red;
 	}
 
@@ -48,6 +49,13 @@
 	    height: 30Px;
 	    background: gray;
     }
+    
+    
+	md-slide-toggle {
+		/deep/ .md-slide-toggle-bar {
+			box-shadow: 0 0 2px 0px white;
+		} 
+	}
 
 }
 :host /deep/ .md-input-wrapper {

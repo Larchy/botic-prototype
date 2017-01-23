@@ -1,0 +1,61 @@
+:host {
+	position: absolute;
+
+	height : 100%;
+	width  : 100%;
+
+	background-image: url(./assets/img/blur-image-bg-02.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: white;
+
+    app-menu {
+    	left: 5%;
+    	position: absolute;
+	}
+	
+	> div > div {
+    	padding: 5%;
+	}
+	
+	.header {
+		min-height: 50px;
+		border-bottom: 1px solid white;
+	}
+
+	.settings {
+		button {
+			height: 80%;
+			width: 80%;
+			background: rgba(0,0,0,0.1);
+	
+			img {
+				height : 100%;
+				width  : 100%;
+			}
+		}
+	}
+	
+	.addCamera {
+		button {
+			background: rgba(0,0,0,0.1);
+			box-shadow: 0 0 2px 0px white;
+		}
+	}
+	
+	md-slide-toggle {
+		/deep/ .md-slide-toggle-bar {
+			box-shadow: 0 0 2px 0px white;
+		} 
+	}
+	
+
+
+
+}
