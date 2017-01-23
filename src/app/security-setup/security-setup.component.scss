@@ -48,4 +48,11 @@
 	    height: 30Px;
 	    background: gray;
     }
+
+}
+:host /deep/ .md-input-wrapper {
+  margin:6px 0;
+  input {
+    text-align: center;
+  }
 }

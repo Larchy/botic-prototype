@@ -3,11 +3,11 @@
 		<app-menu></app-menu>
 		<h2>Setup Account Security</h2>
 	</div>
-	<div fxFlex='30' fxLayout="row" fxLayoutAlign="start center">
-		<md-slide-toggle></md-slide-toggle><img src="./assets/img/security-finger-scan-icon.png" />
+	<div fxFlex='30' fxLayout="row" fxLayoutAlign="space-between center">
+		<md-slide-toggle></md-slide-toggle><img src="./assets/img/security-finger-scan-icon.png" /><div></div>
 	</div>
-	<div fxFlex='30' fxLayout="row" fxLayoutAlign="start center">
-		<md-slide-toggle></md-slide-toggle> <img src="./assets/img/security-voice-record-icon.png" />
+	<div fxFlex='30' fxLayout="row" fxLayoutAlign="space-between center">
+		<md-slide-toggle></md-slide-toggle> <img src="./assets/img/security-voice-record-icon.png" /><div></div>
 	</div>
 	<div fxFlex='30' fxLayout="column">
 		<div fxLayout="row" fxLayoutAlign="start center">
@@ -17,9 +17,10 @@
 			<md-input *ngFor="let pinDigit of PIN"
 				type="password"
 				[(ngModel)]="PIN[pinDigit]"
-				limit-to="1"
+				[maxlength]="1"
 				class="PIN"
 				fxFlex="10"
+        (keyup)="test($event)"
 			></md-input>
 		</div>
 	</div>

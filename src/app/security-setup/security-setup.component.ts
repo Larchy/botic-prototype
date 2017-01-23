@@ -16,4 +16,13 @@ export class SecuritySetupComponent implements OnInit {
 	  }
   }
 
+  test(event:any) {
+    if (event.key != "Tab" && event.key != "Shift" && event.key != "Control" &&event.key != "Alt" ) {
+      let nextMdInput = event.target.parentNode.parentNode.parentNode.parentNode.nextSibling;
+      if (nextMdInput.nodeName == "MD-INPUT") {
+        nextMdInput.getElementsByTagName("input")[0].select();
+      }
+    }
+  }
+
 }
