@@ -1,9 +1,0 @@
-<button md-mini-fab [mdMenuTriggerFor]="menu"><img src="./assets/img/menu-icon.png" /></button>
-<md-menu #menu="mdMenu">
-    <button md-menu-item routerLink="/profile" routerLinkActive="active" *ngIf="router.url != '/profile'">Profile</button>
-    <button md-menu-item routerLink="/security" routerLinkActive="active" *ngIf="router.url != '/security'">Security</button>
-    <button md-menu-item routerLink="/bankInfo" routerLinkActive="active" *ngIf="router.url != '/bankInfo'">Bank Information</button>
-<!--     <button md-menu-item routerLink="/sync" routerLinkActive="active" *ngIf="router.url != '/sync'">Sync Video Camera</button>  -->
-    <button md-menu-item routerLink="/live" routerLinkActive="active" *ngIf="router.url != '/live'">Live</button>
-    <button md-menu-item routerLink="/eventSetup" routerLinkActive="active" *ngIf="router.url != '/eventSetup'">Event Setup</button>
-</md-menu>
