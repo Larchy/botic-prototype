@@ -39,4 +39,15 @@
 	md-input[name~="eventname"] {
 		width : 100%;
 	}
+	
+	md-button-toggle {
+		border: 1px solid white;
+    	border-radius: 20px;
+	}
+	
+	/deep/ .md-button-toggle-label-content {
+		border: 1px solid white;
+    	border-radius: 20px;
+	}
+
 }

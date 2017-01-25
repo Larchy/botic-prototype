@@ -1,3 +1,36 @@
-<p>
-  profile-view works!
-</p>
+<div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
+	<div fxFlex="10" fxLayout="row" fxLayoutAlign="space-between center">
+		<div fxflex='25'></div>
+		<div fxFlex="50" class='shaded roundCorners' fxLayoutAlign="center center"><div>- 00:30:59</div></div>
+		<div fxLayout="row" fxLayoutAlign="center center">
+			<div class='dot'></div>
+			<div class='small'>LIVE</div>
+		</div>
+	</div>
+	<div fxFlex="10" fxLayout="row" fxLayoutAlign="space-between center" class='red'>
+		<h2>Cost $1<sup>00</sup></h2>
+		<img src="./assets/img/play-btn-selected.png" class="play"/>
+	</div>
+	<iframe fxFlex [src]="url" frameborder="0" allowfullscreen></iframe>
+	<div fxFlex="nogrow" fxLayout="column">
+		<div fxLayout="row" fxLayoutAlign="space-between center" class="shaded">
+			<div fxLayout="row" routerLink="/event-summary">
+				<md-icon>arrow_back</md-icon>
+				<span>Back</span>
+			</div>
+			<div fxFlex="33" fxLayout="row" fxLayoutAlign="space-between stretch">
+				<div>
+					<img class="thumbs" src="./assets/img/thumbs-up-selected.png" />
+					<span class='small'>8k</span>
+				</div>
+				<div>
+					<img class="thumbs" src="./assets/img/thumbs-down-selected.png" />
+					<span class='small'>0</span>
+				</div>
+			</div>
+		</div>
+		<div fxFlex="20" fxLayout="row">
+			
+		</div>
+	</div>
+</div>
