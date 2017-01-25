@@ -17,10 +17,10 @@ export class LiveComponent implements OnInit {
 
   ngOnInit() {
 	  this.feeds = [
-          {name: "@RichJay", id: 'tJJdBTQqwQM'},
-          {name: "@MelvinJamie", id: 'dvlEaUlTEsg'},
-          {name: "@AngelaJones", id: 'Mx1DxPwEz1w'},
-          {name: "@DougSmith", id: 'WtH3dBbEDIE'}
+          {name: "@RichJay", id: 'tJJdBTQqwQM', tumbnail: 'cook-01.png'},
+          {name: "@MelvinJamie", id: 'dvlEaUlTEsg', tumbnail: 'cook-02.png'},
+          {name: "@AngelaJones", id: 'Mx1DxPwEz1w', tumbnail: 'cook-03.png'},
+          {name: "@DougSmith", id: 'WtH3dBbEDIE', tumbnail: 'cook-04.png'}
 	  ];
 
 	  this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id + "?autoplay=1" + "rel=0&showinfo=0&autoplay=1");

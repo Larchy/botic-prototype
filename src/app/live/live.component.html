@@ -29,7 +29,7 @@
 		<md-divider></md-divider>
 		<div fxLayout="row">
 			<div *ngFor="let feed of feeds" fxLayout="column" fxLayoutAlign="center center" fxFlex="33" (click)="selectVideo(feed.id)">
-				<button md-fab>
+				<button md-fab [ngStyle]="{background: 'url(./assets/img/' + feed.tumbnail + ')'}">
 					<img src="./assets/img/camera-not-selected.png" />
 				</button>
 				<div class='small' >{{feed.name}}</div>
