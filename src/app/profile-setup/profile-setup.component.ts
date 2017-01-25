@@ -6,14 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-setup.component.scss']
 })
 export class ProfileSetupComponent implements OnInit {
+	private cams:any;
 
   constructor() { }
 
   ngOnInit() {
+	  this.cams = [
+		  { active : true, img: 'camera-selected.png' },
+		  { active : false, img: 'camera-not-selected.png' },
+		  { active : false, img: 'camera-not-selected.png' }
+	  ];
   }
   
-  camImage(value) {
-	  return value ? './assets/img/camera-selected.png' : './assets/img/camera-not-selected.png';
+  updateCam(cam) {
+	  cam.img = cam.active ? 'camera-selected.png' : 'camera-not-selected.png';
   }
 
 }
