@@ -1,3 +1,16 @@
-<p>
-  profile-setup works!
-</p>
+<div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
+	<div fxLayout="row">
+		<div fxFlex="33"><app-menu></app-menu></div>
+	</div>
+	<div fxFlex="40" fxLayout="row" fxLayoutAlign="center end">
+		<img class="profileImg" src="./assets/img/mark-turner-profile-pic.png" />
+		<button md-fab class="changeProfileImg"><img src="./assets/img/camera-upload-icon.png" /></button>
+	</div>
+	<div fxFlex fxLayout="row" fxLayoutAlign="start end">
+		<div *ngFor="let cam of [1,2,3]" fxFlex="33" fxLayout="column" fxLayoutAlign="space-between center">
+			<button md-fab routerLink="/sync"><img class="cam" [src]="camImage(slider.value)" /></button>
+			<div>View Point {{cam}}</div>
+			<md-slide-toggle #slider color="primary"></md-slide-toggle>
+		</div>
+	</div>
+</div>

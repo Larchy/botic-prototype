@@ -11,5 +11,9 @@ export class ProfileSetupComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  camImage(value) {
+	  return value ? './assets/img/camera-selected.png' : './assets/img/camera-not-selected.png';
+  }
 
 }

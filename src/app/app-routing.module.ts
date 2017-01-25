@@ -3,6 +3,7 @@ import { RouterModule, Routes }   from '@angular/router';
 import { LogonComponent }         from './logon/logon.component';
 import { SecuritySetupComponent } from './security-setup/security-setup.component';
 import { ProfileComponent }       from './profile/profile.component';
+import { ProfileSetupComponent }  from './profile-setup/profile-setup.component';
 import { LiveComponent }          from './live/live.component';
 import { EventSetupComponent }    from './event-setup/event-setup.component';
 import { NotFoundComponent }      from './not-found/not-found.component';
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
   { path: 'security', component: SecuritySetupComponent },
   { path: 'bankInfo', component: BankInfoComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'profile-setup', component: ProfileSetupComponent },
   { path: 'sync', component: SyncComponent },
   { path: 'live', component: LiveComponent },
   { path: 'eventSetup', component: EventSetupComponent },
