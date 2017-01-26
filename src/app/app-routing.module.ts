@@ -5,12 +5,14 @@ import { SecuritySetupComponent } from './security-setup/security-setup.componen
 import { ProfileComponent }       from './profile/profile.component';
 import { ProfileSetupComponent }  from './profile-setup/profile-setup.component';
 import { ProfileViewComponent }   from './profile-view/profile-view.component';
+import { HostViewComponent }      from './host-view/host-view.component';
 import { LiveComponent }          from './live/live.component';
+import { ChannelTopicsComponent } from './channel-topics/channel-topics.component';
 import { EventSetupComponent }    from './event-setup/event-setup.component';
-import { EventSummaryComponent }    from './event-summary/event-summary.component';
+import { EventSummaryComponent }  from './event-summary/event-summary.component';
 import { NotFoundComponent }      from './not-found/not-found.component';
-import {BankInfoComponent}        from "./bank-info/bank-info.component";
-import {SyncComponent}            from "./sync/sync.component";
+import { BankInfoComponent }      from "./bank-info/bank-info.component";
+import { SyncComponent }          from "./sync/sync.component";
 
 const appRoutes: Routes = [
   { path: 'logon', component: LogonComponent },
@@ -19,7 +21,9 @@ const appRoutes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'profile-setup', component: ProfileSetupComponent },
   { path: 'profile-view', component: ProfileViewComponent },
+  { path: 'channel-topics', component: ChannelTopicsComponent },
   { path: 'sync', component: SyncComponent },
+  { path: 'host-view', component: HostViewComponent },
   { path: 'live', component: LiveComponent },
   { path: 'eventSetup', component: EventSetupComponent },
   { path: 'event-summary', component: EventSummaryComponent },

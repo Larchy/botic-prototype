@@ -1,5 +1,30 @@
-<p>
-  Just throwing this somewhere if we need it
-
-  <video #video autoplay></video>
-</p>
+<div fxFill fxLayout="column" fxLayoutAlign="space-between stretch">
+	<div fxLayout="row" fxLayoutAlign="space-between center" class='shaded'>
+		<app-menu></app-menu>
+		<div fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+			<div>Time Left</div>
+			<div>00:30:59</div>
+		</div>
+		<div fxLayout="row" fxLayoutAlign="center center">
+			<div class='dot'></div>
+			<div class='small'>LIVE</div>
+		</div>
+	</div>
+	<hr/>
+	<video fxFlex="25" #video autoplay></video>
+	<div fxFlex="nogrow" fxLayout="column">
+		<div fxLayout="row" fxLayoutAlign="space-between">
+			<md-icon routerLink="/profile">exit_to_app</md-icon>
+			<div fxFlex="33" fxLayout="row" fxLayoutAlign="space-between stretch">
+				<div>
+					<img class="thumbs" src="./assets/img/thumbs-up-selected.png" />
+					<span class='small'>8k</span>
+				</div>
+				<div>
+					<img class="thumbs" src="./assets/img/thumbs-down-selected.png" />
+					<span class='small'>0</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

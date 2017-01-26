@@ -1,7 +1,7 @@
 <div fxFlex="90" fxFlexOffset="5" fxLayout="column" fxLayoutAlign="space-between stretch">
   <div class="logo" fxFlex="none"><img src="./assets/img/botic-app-logo.png"/></div>
   <div fxFlex style="position:relative;">
-    <form *ngIf="!useEmail" fxLayout="column" fxLayoutAlign="space-between none" (ngSubmit)="login()" [@myAnimation]="hide">
+    <form *ngIf="!useEmail" #f="ngForm" fxLayout="column" fxLayoutAlign="space-between none" (ngSubmit)="f.form.valid && login()" [@myAnimation]="hide">
       <div fxLayout="row" fxLayoutAlign="center center">
         <md-icon fxFlex="none">person</md-icon>
         <md-input #username
