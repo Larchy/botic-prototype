@@ -1,3 +1,46 @@
-<p>
-  donation works!
-</p>
+<div class="wrapper">
+  <div fxFill fxLayout="column" fxLayoutAlign="space-between stretch" *ngIf="!completed" [@myAnimation]="hide" style="padding:5%">
+    <div fxLayout="row" fxLayoutAlign="space-between stretch">
+      <div fxFlex="33"><app-menu></app-menu></div>
+      <div fxFlex="33"><button md-fab routerLink="/profile-setup" ><img src="./assets/img/mark-turner-profile-pic.png" /></button></div>
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <div class='dot'></div>
+        <div class='small'>LIVE</div>
+      </div>
+    </div>
+    <span>Behind the scenes with Mark Turner</span>
+    <md-divider></md-divider>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <img src="./assets/img/one-time-donation-icon.png" />
+      <md-input placeholder="One time donation"></md-input>
+    </div>
+    <md-divider></md-divider>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <img src="./assets/img/recurring-donation-icon.png" />
+      <md-input placeholder="Recurring Donation"></md-input>
+    </div>
+    <md-divider></md-divider>
+    <div fxFlex></div>
+    <button style="background-color:#3691a9; font-size:32px; margin:10px" fxFlex md-raised-button color="primary" (click)="completed=true">Confirm Donation</button>
+    <span style="font-size: 8px; margin-bottom:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+  </div>
+
+
+  <div fxFill fxLayout="column" fxLayoutAlign="space-between center" *ngIf="completed" [@myAnimation]="show">
+    <div fxLayout="row" fxLayoutAlign="space-between stretch" style="background:black; padding:5%; width:100%;">
+      <div fxFlex="33"><app-menu></app-menu></div>
+      <div fxFlex="50" style="text-align: center">Behind the scenes with Mark Turner</div>
+      <div fxFlex></div>
+    </div>
+    <span class="green">Thank You!</span>
+    <div style="width:100%; text-align: center"><img src="./assets/img/approved-icon-lg.png" width="40%"/></div>
+    <span>Your Donation is Complete</span>
+    <div fxLayout="row">
+      <span class="green">$1,000</span>
+      <img src="./assets/img/recurring-donation-icon.png" height="68" style="margin-left:6px" />
+    </div>
+    <span>Total for this event so far</span>
+    <span class="green">$19,000.00</span>
+    <div></div>
+  </div>
+</div>

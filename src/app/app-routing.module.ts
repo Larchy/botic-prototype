@@ -13,6 +13,7 @@ import { EventSummaryComponent }  from './event-summary/event-summary.component'
 import { NotFoundComponent }      from './not-found/not-found.component';
 import { BankInfoComponent }      from "./bank-info/bank-info.component";
 import { SyncComponent }          from "./sync/sync.component";
+import { DonationComponent }      from "./donation/donation.component";
 
 const appRoutes: Routes = [
   { path: 'logon', component: LogonComponent },
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'profile-setup', component: ProfileSetupComponent },
   { path: 'profile-view', component: ProfileViewComponent },
+  { path: 'donate', component: DonationComponent },
   { path: 'channel-topics', component: ChannelTopicsComponent },
   { path: 'sync', component: SyncComponent },
   { path: 'host-view', component: HostViewComponent },
