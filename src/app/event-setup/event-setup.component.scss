@@ -32,19 +32,15 @@
 		background: rgba(0,0,0,0.3);
 	}
 
-	> div > div {
-    	padding: 5%;
-	}
-
 	md-input[name~="eventname"] {
 		width : 100%;
 	}
-	
+
 	md-button-toggle {
 		border: 1px solid white;
     	border-radius: 20px;
 	}
-	
+
 	/deep/ .md-button-toggle-label-content {
 		border: 1px solid white;
     	border-radius: 20px;

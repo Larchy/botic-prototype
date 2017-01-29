@@ -23,9 +23,12 @@
 				<span md-prefix><md-icon class="md-accent">check_circle</md-icon></span>
 			</md-input>
 		</div>
-		<md-input #eventCost type="text" name="eventcost" placeholder="Cost" [(ngModel)]="event.cost">
-			<span md-prefix><md-icon class="md-accent">check_circle</md-icon> $</span>
-		</md-input>
+    <div fxLayout="row" fxLayoutAlign="space-between stretch">
+      <md-input #eventCost type="text" name="eventcost" placeholder="Cost" [(ngModel)]="event.cost">
+        <span md-prefix><md-icon class="md-accent">check_circle</md-icon> $</span>
+      </md-input>
+      <md-checkbox>Enable Donations</md-checkbox>
+    </div>
 		<md-button-toggle-group #group="mdButtonToggleGroup" fxFill fxLayout="row" fxLayoutAlign="space-around center">
 		    <md-button-toggle value="G" >G</md-button-toggle>
 		    <md-button-toggle value="PG" >PG</md-button-toggle>
