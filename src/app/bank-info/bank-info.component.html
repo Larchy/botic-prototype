@@ -5,7 +5,8 @@
   </div>
   <div fxFlex="none" style="padding:20px;" [ngClass]="{invisible:frozen}"><button md-raised-button (click)="frozen=true; takePic(video)">Scan Bank Card</button></div>
   <div fxFlex class="scanArea">
-    <video #video autoplay></video>
+    <!--<video #video autoplay></video>-->
+    <img src="./assets/img/credit-card.png" style="height:230px; top:0; left:0; width:100%" />
     <img src="./assets/img/credit-card-scanner.png" (click)="frozen = true; takePic(video)" />
   </div>
   <div fxFlex></div>
