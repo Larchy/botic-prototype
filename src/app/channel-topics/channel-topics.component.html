@@ -1,5 +1,47 @@
-<p>
-  channel-topics works!
-</p>
+<div fxFill fxLayout="column" fxLayoutAlign="start stretch">
+	<div fxLayout="row" fxLayoutAlign="center center" class="header">
+		<app-menu></app-menu>
+		<h2>Channel Topics</h2>
+	</div>
+	
+	<form>
+		<md-input #search type="text" name="search" placeholder="Presidential Debates" fxFlex>
+		    <span md-prefix fxLayout='row' fxLayoutAlign='start center'><md-icon>search</md-icon> <span>Search</span></span>
+		    <span md-suffix><md-icon>mic</md-icon></span>
+	    </md-input>
+    </form>
+    
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="shaded">
+		<img src="./assets/img/play-btn-selected.png" class="play" routerLink="/profile-view" fxFlex="15"/>
+		<h3 fxFlexOffset="5" fxFlex="60">Presidential Debates</h3>
+		<div class="roundOutline" fxLayout="column" fxLayoutAlign="center center" fxFlexOffset="5" fxFlex="15">
+			<div>45m</div>
+			<div class="small">viewers</div>
+		</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+		<img src="./assets/img/play-btn-not-selected.png" class="play" routerLink="/profile-view" fxFlex="15"/>
+		<h3 fxFlexOffset="5" fxFlex="60">Race in America</h3>
+		<div class="roundOutline" fxLayout="column" fxLayoutAlign="center center" fxFlexOffset="5" fxFlex="15">
+			<div>31m</div>
+			<div class="small">viewers</div>
+		</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+		<img src="./assets/img/play-btn-not-selected.png" class="play" routerLink="/profile-view" fxFlex="15"/>
+		<h3 fxFlexOffset="5" fxFlex="60">Poll numbers are down</h3>
+		<div class="roundOutline" fxLayout="column" fxLayoutAlign="center center" fxFlexOffset="5" fxFlex="15">
+			<div>92k</div>
+			<div class="small">viewers</div>
+		</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+		<img src="./assets/img/play-btn-not-selected.png" class="play" routerLink="/profile-view" fxFlex="15"/>
+		<h3 fxFlexOffset="5" fxFlex="60">Campaign Trail</h3>
+		<div class="roundOutline" fxLayout="column" fxLayoutAlign="center center" fxFlexOffset="5" fxFlex="15">
+			<div>12k</div>
+			<div class="small">viewers</div>
+		</div>
+    </div>
 
-<button md-button routerLink="/profile-view">temp button for profile-view</button>
+</div>
