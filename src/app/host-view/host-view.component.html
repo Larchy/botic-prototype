@@ -11,10 +11,13 @@
 		</div>
 	</div>
 	<hr/>
-	<video fxFlex="25" #video autoplay></video>
+	<video fxFlex="45" #video autoplay></video>
 	<div fxFlex="nogrow" fxLayout="column">
 		<div fxLayout="row" fxLayoutAlign="space-between">
-			<md-icon routerLink="/profile">exit_to_app</md-icon>
+			<div fxLayout="row" fxLayoutAlign="center center" routerLink="/event-summary">
+				<md-icon>arrow_back</md-icon>
+				<span>Back</span>
+			</div>			
 			<div fxFlex="33" fxLayout="row" fxLayoutAlign="space-between stretch">
 				<div>
 					<img class="thumbs" src="./assets/img/thumbs-up-selected.png" />

@@ -3,12 +3,14 @@
 		<app-menu></app-menu>
 		<button md-raised-button routerLink="/host-view" class="md-accent">Publish</button>
 	</div>
-	<div fxFlex fxLayoutAlign="end end">
+	<div fxFlex fxLayoutAlign="end end" class="videoContainer">
 		<iframe fxFill [src]="url" frameborder="0" allowfullscreen></iframe>
+	<!-- 
 		<div fxLayout="column" fxLayoutAlign="center center" class="previewContainer">
 			<button md-mini-fab><img src="./assets/img/camera-not-selected.png" /></button>
 			<div>Preview</div>
 		</div>
+	-->
 	</div>
 	<form fxFlex="nogrow" fxLayout="column" fxLayoutAlign="space-between center" class="shaded">
 		<md-input type="text" name="eventname" placeholder="Event Name" [(ngModel)]="event.name">

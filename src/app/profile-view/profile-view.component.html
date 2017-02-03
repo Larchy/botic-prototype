@@ -9,12 +9,12 @@
 	</div>
 	<div fxFlex="10" fxLayout="row" fxLayoutAlign="space-between center" class='red'>
 		<h2>Cost $1<sup>00</sup></h2>
-		<img src="./assets/img/play-btn-selected.png" class="play"/>
+		<img src="./assets/img/play-btn-selected.png" class="play" routerLink="/live"/>
 	</div>
 	<iframe fxFlex [src]="url" frameborder="0" allowfullscreen></iframe>
 	<div fxFlex="nogrow" fxLayout="column">
 		<div fxLayout="row" fxLayoutAlign="space-between center" class="shaded">
-			<div fxLayout="row" routerLink="/event-summary">
+			<div fxLayout="row" fxLayoutAlign="center center" routerLink="/channel-topics">
 				<md-icon>arrow_back</md-icon>
 				<span>Back</span>
 			</div>

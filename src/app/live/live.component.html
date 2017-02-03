@@ -14,8 +14,11 @@
 	<iframe fxFlex [src]="url" frameborder="0" allowfullscreen></iframe>
 	<div fxFlex="nogrow" fxLayout="column">
 		<div fxLayout="row" fxLayoutAlign="space-between center" style="padding-bottom:10px;">
-			<md-icon routerLink="/profile">exit_to_app</md-icon>
-      <button md-button color="primary" routerLink="/donate">Donate</button>
+			<div fxLayout="row" fxLayoutAlign="center center" routerLink="/channel-topics">
+				<md-icon>arrow_back</md-icon>
+				<span>Back</span>
+			</div>
+      		<button md-button color="primary" routerLink="/donate">Donate</button>
 			<div fxFlex="33" fxLayout="row" fxLayoutAlign="space-between stretch">
 				<div>
 					<img class="thumbs" src="./assets/img/thumbs-up-selected.png" />

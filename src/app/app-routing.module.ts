@@ -27,7 +27,7 @@ const appRoutes: Routes = [
   { path: 'sync', component: SyncComponent },
   { path: 'host-view', component: HostViewComponent },
   { path: 'live', component: LiveComponent },
-  { path: 'eventSetup', component: EventSetupComponent },
+  { path: 'event-setup', component: EventSetupComponent },
   { path: 'event-summary', component: EventSummaryComponent },
   { path: '',   redirectTo: '/logon', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
