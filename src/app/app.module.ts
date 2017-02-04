@@ -25,6 +25,7 @@ import { HostViewComponent } from './host-view/host-view.component';
 import { EventSummaryComponent } from './event-summary/event-summary.component';
 import { DonationComponent } from './donation/donation.component';
 import { ProfileSetupComponent } from './profile-setup/profile-setup.component';
+import { EventHistoryComponent } from './event-history/event-history.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ProfileSetupComponent } from './profile-setup/profile-setup.component';
     HostViewComponent,
     EventSummaryComponent,
     DonationComponent,
-    ProfileSetupComponent
+    ProfileSetupComponent,
+    EventHistoryComponent
   ],
   imports: [
     BrowserModule,

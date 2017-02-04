@@ -10,6 +10,7 @@ import { LiveComponent }          from './live/live.component';
 import { ChannelTopicsComponent } from './channel-topics/channel-topics.component';
 import { EventSetupComponent }    from './event-setup/event-setup.component';
 import { EventSummaryComponent }  from './event-summary/event-summary.component';
+import { EventHistoryComponent }  from './event-history/event-history.component';
 import { NotFoundComponent }      from './not-found/not-found.component';
 import { BankInfoComponent }      from "./bank-info/bank-info.component";
 import { SyncComponent }          from "./sync/sync.component";
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
   { path: 'live', component: LiveComponent },
   { path: 'event-setup', component: EventSetupComponent },
   { path: 'event-summary', component: EventSummaryComponent },
+  { path: 'event-history', component: EventHistoryComponent },
   { path: '',   redirectTo: '/logon', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];

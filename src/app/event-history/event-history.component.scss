@@ -1,0 +1,43 @@
+:host {
+	position: absolute;
+
+	height : 100%;
+	width  : 100%;
+
+	background-image: url(./assets/img/blur-image-bg-07.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: white;
+
+    app-menu {
+    	left: 5%;
+    	position: absolute;
+	}
+	
+	/deep/ .md-input-prefix {
+    	padding-right: 10px;
+	}
+	
+	> div > * {
+    	padding: 5%;
+	}
+	.shaded {
+		background: rgba(0,0,0,0.3);
+	}
+	
+	.small { 
+		font-size: 8px;
+	}
+	.roundOutline { 
+		border: 1px solid white;
+    	border-radius: 20px;
+    	padding: 6px;
+	}
+
+}
