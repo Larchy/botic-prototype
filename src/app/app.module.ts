@@ -26,6 +26,7 @@ import { EventSummaryComponent } from './event-summary/event-summary.component';
 import { DonationComponent } from './donation/donation.component';
 import { ProfileSetupComponent } from './profile-setup/profile-setup.component';
 import { EventHistoryComponent } from './event-history/event-history.component';
+import { Profile2Component } from './profile2/profile2.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { EventHistoryComponent } from './event-history/event-history.component';
     EventSummaryComponent,
     DonationComponent,
     ProfileSetupComponent,
-    EventHistoryComponent
+    EventHistoryComponent,
+    Profile2Component
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes }   from '@angular/router';
 import { LogonComponent }         from './logon/logon.component';
 import { SecuritySetupComponent } from './security-setup/security-setup.component';
 import { ProfileComponent }       from './profile/profile.component';
+import { Profile2Component }       from './profile2/profile2.component';
 import { ProfileSetupComponent }  from './profile-setup/profile-setup.component';
 import { ProfileViewComponent }   from './profile-view/profile-view.component';
 import { HostViewComponent }      from './host-view/host-view.component';
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   { path: 'security', component: SecuritySetupComponent },
   { path: 'bankInfo', component: BankInfoComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'profile2', component: Profile2Component },
   { path: 'profile-setup', component: ProfileSetupComponent },
   { path: 'profile-view', component: ProfileViewComponent },
   { path: 'donate', component: DonationComponent },
